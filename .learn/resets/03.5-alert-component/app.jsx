@@ -6,18 +6,8 @@ import PropTypes from "prop-types";
  * Here you have to declare your Alert component and return
  * the html that bootstrap dictates for its alert component
  */
-const Attention = (props) => {
-	return (
-		<div class="alert alert-danger" role="alert">
-			{props.text}
-		</div>
-	);
-};
 
-Attention.PropTypes = {
-	text: PropTypes.string,
-};
 
 // Here is where the <Alert /> component is being used, you don't have to edit this part
 // But it helps you understand what properties the component is using
-ReactDOM.render(<Attention text="OMG! Something really bad has happened!" />, document.querySelector("#myDiv"));
+ReactDOM.render(<Alert text="OMG! Something really bad has happened!" />, document.querySelector("#myDiv"));
